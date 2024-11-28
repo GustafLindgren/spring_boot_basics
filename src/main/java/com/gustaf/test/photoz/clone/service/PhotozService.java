@@ -39,7 +39,7 @@ public class PhotozService {
 
 	public void remove(Integer id) {
 		
-		photozRepository.deleteById(id);;
+		photozRepository.deleteById(id);
 	}
 
 	public Photo save(String fileName, String contentType, byte[] data) {

@@ -11,6 +11,7 @@ import jakarta.validation.constraints.NotEmpty;
 @Table("PHOTOZ")
 public class Photo {
 	
+	// Id means primary key
 	@Id
 	private Integer id;
 	
@@ -20,6 +21,7 @@ public class Photo {
 	
 	// So we don't see the data in the front-end i.e. no long string
 	@JsonIgnore
+	@NotEmpty
 	private byte[] data;
 	
 	private String contentType;
